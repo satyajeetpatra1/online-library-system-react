@@ -1,5 +1,22 @@
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Books from "./pages/Books";
+import Home from "./pages/Home";
+import BookDetails from "./pages/BookDetails";
+import AddBook from "./pages/AddBook";
+import ErrorPage from "./pages/ErrorPage";
+
 function App() {
-  return <div>App</div>;
+  return <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/books/:category" element={<Books />} />
+        <Route path="/book/:id" element={<BookDetails />} />
+        <Route path="/add-book" element={<AddBook />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </>;
 }
 
 export default App;
