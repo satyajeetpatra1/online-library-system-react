@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom";
 import BookCard from "../components/BookCard";
+import { booksData } from "../utils/booksData";
 
 function Home() {
-  const categories = ["Fiction", "Non-Fiction", "Sci-Fi"];
-
-  const book = {
-    id: 1,
-    title: "Atomic Habits",
-    author: "James Clear",
-    category: "Non-Fiction",
-    description: "A guide to building good habits and breaking bad ones.",
-    rating: 4.8,
-    image: "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg"
-  }
+  const categories = ["Fiction", "Non-Fiction", "Sci-Fi", "All"];
 
   return (
     <div className="p-6">
@@ -31,8 +22,11 @@ function Home() {
       </div>
 
       <h3 className="text-xl mb-3">Popular Books</h3>
+      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <BookCard book={book} />
+        {booksData.slice(0, 3).map((book) => (
+          <BookCard key={book.id} book={book} />
+        ))}
       </div>
     </div>
   );

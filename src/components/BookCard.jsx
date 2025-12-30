@@ -8,7 +8,7 @@ function BookCard({ book }) {
         <img
           src={book.image}
           alt={book.title}
-          className="h-48 w-full object-cover rounded"
+          className="h-68 w-full object-contain rounded"
         />
 
         {/* Book Info */}
