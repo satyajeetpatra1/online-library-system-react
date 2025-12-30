@@ -6,7 +6,7 @@ const booksSlice = createSlice({
   initialState: booksData,
   reducers: {
     addBook: (state, action) => {
-      state = [(action.payload), ...state]; // add at beginning
+      state.unshift(action.payload);
     },
   },
 });
