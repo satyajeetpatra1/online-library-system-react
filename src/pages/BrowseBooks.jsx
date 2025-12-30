@@ -1,11 +1,10 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import BookCard from "../components/BookCard";
 import { booksData } from "../utils/booksData";
 
 function BrowseBooks() {
   const { category = "All" } = useParams();
-  const navigate = useNavigate();
 
   const [search, setSearch] = useState("");
 
@@ -36,17 +35,17 @@ function BrowseBooks() {
       {/* Category Filter */}
       <div className="flex justify-center gap-3 mb-8 flex-wrap">
         {categories.map((cat) => (
-          <button
+          <Link
             key={cat}
-            onClick={() => navigate(`/books/${cat}`)}
-            className={`px-4 py-2 rounded-md transition cursor-pointer ${
+            to={`/books/${cat}`}
+            className={`px-4 py-2 rounded-md transition ${
               category === cat
                 ? "bg-indigo-600 text-white"
                 : "bg-gray-200 hover:bg-gray-300"
             }`}
           >
             {cat}
-          </button>
+          </Link>
         ))}
       </div>
 
