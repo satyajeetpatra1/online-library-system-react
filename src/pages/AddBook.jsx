@@ -55,7 +55,7 @@ export default function AddBook() {
             <label className="block text-sm font-medium mb-1">Book Title</label>
             <input
               type="text"
-              placeholder="Atomic Habits"
+              placeholder="Enter Book Title..."
               className="border p-2 w-full rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
               onChange={(e) => setForm({ ...form, title: e.target.value })}
             />
@@ -66,7 +66,7 @@ export default function AddBook() {
             <label className="block text-sm font-medium mb-1">Author</label>
             <input
               type="text"
-              placeholder="James Clear"
+              placeholder="Enter Author Name..."
               className="border p-2 w-full rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
               onChange={(e) => setForm({ ...form, author: e.target.value })}
             />
@@ -92,14 +92,14 @@ export default function AddBook() {
           {/* Rating */}
           <div>
             <label className="block text-sm font-medium mb-1">
-              Rating (0 – 5)
+              Rating (0 - 5)
             </label>
             <input
               type="number"
               step="0.1"
               min="0"
               max="5"
-              placeholder="4.5"
+              placeholder="Enter Rating..."
               className="border p-2 w-full rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
               onChange={(e) =>
                 setForm({ ...form, rating: Number(e.target.value) })
@@ -124,7 +124,7 @@ export default function AddBook() {
           <label className="block text-sm font-medium mb-1">Image URL</label>
           <input
             type="text"
-            placeholder="https://image-link.com/book.jpg"
+            placeholder="Enter Image Link..."
             className="border p-2 w-full rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
             onChange={(e) => setForm({ ...form, image: e.target.value })}
           />

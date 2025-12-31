@@ -1,16 +1,24 @@
-# React + Vite
+# Online Library System 📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Created a fully responsive Online Library System using React.
+* Created with the use of React | Redux Toolkit | Tailwind CSS | React Router.
+* Use of version control system (Git & GitHub).
 
-Currently, two official plugins are available:
+About the project –
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. This project is an online library system where users can browse, search, and add books.
+2. The Home page contains a welcome section, book categories, and a list of popular books displayed as cards.
+3. The Browse Books page allows users to filter books by category and search by title or author.
+4. Clicking on View Details navigates to the Book Details page.
+5. The Add Book page allows users to add a new book with validation.
+6. Redux is used for state management.
+7. A custom 404 page handles invalid routes.
+8. Fully responsive on mobile and laptop.
 
-## React Compiler
+Tech Stack –
+- React (Vite)
+- Redux Toolkit
+- Tailwind CSS
+- React Router DOM
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+HOPE YOU LIKE THE PROJECT 😊
